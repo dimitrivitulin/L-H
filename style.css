@@ -1,0 +1,829 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+.titre{
+    color:#004F9F;
+    letter-spacing:3px;
+    margin-left: 72px;
+    width: 250px;
+    align-self: flex-start;
+}
+.titre h2{
+    font-size: 1.8rem;
+}
+
+.surlignage{
+    height: 3px;
+    margin-top: 10px;
+    background-color:#DFAF2C;
+}
+
+@media (max-width:700px){
+    .titre{
+        align-self: center;
+        text-align: start;
+        width: 80%;
+        margin:0 auto;
+    }
+    
+}
+                      /***********HEADER*************/
+
+
+header{
+    width: 100vw;
+    min-height:100vh;
+    display: flex;
+    justify-content: space-between;
+    background: url(img/cheval1.jpg) no-repeat; 
+    background-position:  center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 0 0 48px 48px;
+    overflow: hidden;
+}
+
+header .logo{
+    width: 10vw;
+}
+
+header .logo img{
+    width: 60px;
+    margin: 49px 0 0 49px;
+}
+
+.menu-desktop{
+    width: 50vw;
+}
+
+.menu-desktop ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-top: 54px;
+}
+.menu-desktop ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+
+.gros-titre{
+    position: absolute;
+    top:250px;
+    left: 1000px;
+}
+.gros-titre h1{
+    font-size: 65px;
+    line-height: 1.4;
+    font-weight: 550;
+    text-shadow: 2px 2px blue;
+}
+
+
+
+/* test burger */
+.burger{
+    display: none;
+}
+.burger__checkbox {
+    display: none;
+  }
+  .burger__checkbox:checked ~ .burger__menu {
+    right: 0; }
+  
+  .burger__checkbox:checked ~ .burger__button .burger__button-line:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;  
+  }
+  .burger__checkbox:checked ~ .burger__button .burger__button-line:nth-child(2) {
+    opacity: 0;  
+  }
+  .burger__checkbox:checked ~ .burger__button .burger__button-line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -6px;  
+  }
+  
+  .burger__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    corsor: pointer;
+    z-index: 1;
+  }
+  .burger__button-line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background: #000;
+    margin: 2px 0;
+    position: relative;  
+    transition: all .2s ;
+  }
+  .burger__menu {
+    position: relative;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.164);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 100px 40px 40px;
+    transition: right .4s;
+    border-bottom-left-radius: 20px;
+  }
+  .burger__menu-link {
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    transition: all .2s linear;
+  }
+  .burger__menu-link:hover {
+    padding-right: 20px;
+    color: #DFAF2C;
+    text-shadow: 5px 5px 15px #017ffd;
+  }
+
+/*******RESPONSIVE HEADER********/
+
+  @media (max-width:700px) {
+
+    header .logo{
+        width: 10vw;
+    }
+    
+    header .logo img{
+        width: 50px;
+        margin:25px 0 0 25px;
+    }
+      .menu-desktop{
+        display: none;
+      }
+      .burger{
+        display: block;
+      }
+
+      .gros-titre{
+        position: absolute;
+        top:400px;
+        left: 45px;
+      }
+      .gros-titre h1{
+        font-size: 4rem;
+        font-weight: 550;
+        text-shadow: 2px 2px 5px blue;
+    }
+      
+  }
+                    /***********------MAIN---- *************/
+
+
+
+
+                    /***********EN IMAGE*************/
+
+
+
+
+.en-image{
+    width: 100%;
+    margin: 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.en-image video{
+    margin-top: 200px;
+    width: 80vw;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+.video{
+    position: relative;
+}
+
+        /* responsive En image */
+
+@media (max-width:700px) {
+    .en-image{
+        margin: 40px 0;
+    }
+    .en-image video{
+        margin-top: 60px;
+    }
+}
+
+
+                    /***********PENSIONS*************/
+
+
+
+
+.pensions{
+    width: 100%;
+    margin-bottom: 15vh;
+}
+
+
+ .pensions-images{
+     display:grid;
+     width: 100%;
+     grid-template-columns:100px 1fr 1fr 1fr 100px;
+     gap: 10px;
+     grid-template-rows: 70vh;
+     margin: 15vh 0 10vh 0;
+ }
+.pension{
+
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.514);
+    grid-row: 1;
+
+}
+ .pension1{
+     background:url(img/cheval\ 2\ l&h.jpg);
+     background-size: cover;
+     background-position: center;
+     grid-column: 2/3;
+
+ }
+ .pension2{
+    background:url(img/cheval\ 3\ l&h.jpg);
+    background-size: cover;
+    background-position: center;
+     grid-column: 3/4;
+ }
+ .pension3{
+    background:url(img/cheval\ 4\ l&h.jpg);
+    background-size: cover;
+    background-position: center;
+     grid-column: 4/5;
+ }
+
+ .pension-txt{
+     position: absolute;
+     top: -100px;
+     left: 0px;
+     width: 100%;
+     height: 100%;
+     background-color: transparent;
+     border-radius:10px;
+     color:transparent;
+     letter-spacing: .2rem;
+     padding: 50px ;
+     transition: transform 300ms ease-in-out;
+
+ }
+
+ .pension-txt:hover{
+    background-color: rgba(0, 0, 0, 0.856);
+    transform: translateY(100px);
+    color: white;
+
+ }
+
+ .pension-txt h3{
+     letter-spacing: .4rem;
+     padding-bottom:25px ;
+ }
+
+ .pension-txt p{
+     font-weight: 700px;
+     padding: 6px 0;
+
+ }
+ .pension-txt p:hover{
+    color:#DFAF2C;
+    cursor: pointer;
+ }
+
+    /* boutons pensions  */
+
+ .boutons-pensions{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+.boutons-pensions a{
+    display: inline-block;
+    width: 250px;
+    margin:0 15px;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: transform 2s ease-in-out;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+
+.boutons-pensions a:hover{
+    transform: scalex(1.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.514);
+
+}
+
+.btn1{
+    text-align: center;
+    background-color: #004F9F;
+}
+.btn2{
+    text-align: center;
+    background-color:#DFAF2C ;
+}
+
+.btn1:hover{
+    background-color:#DFAF2C ;
+}
+.btn2:hover{
+    background-color:#004F9F ;
+}
+
+        /* responsive Pensions */
+
+ @media (max-width:1300px){
+    .pensions-images{
+        grid-template-columns:auto 1fr 1fr 1fr auto;
+    }
+    .pension-txt{
+        padding:20px;
+    }
+
+    .pension-txt p{
+        font-size: 0.8rem;
+    }
+
+            }        
+@media (max-width:700px){
+    .pensions-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:30px 0;
+    }
+    .pension{
+        margin: 15px 0;
+        width: 90vw;
+        height: 65vh;
+        min-height: 615px;
+    }
+    .pension-txt{
+        min-height: 615px;
+    }
+
+    .pension-txt p{
+        font-size: 1rem;
+    }
+    .boutons-pensions{
+        flex-direction: column;
+    }
+
+    .boutons-pensions a{
+        margin: 20px 15px;
+        display: block;
+    }
+
+}
+
+
+
+              /***********TARIFS*************/
+
+
+
+.tarifs{
+    margin-bottom: 15vh;
+}
+.titre-tarifs{
+    margin-bottom: 20vh;
+}   
+
+.formule{
+    height: 80vh;
+    background-color: #004F9F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 100px;
+    border-radius: 20px;
+}
+
+.formule-sub{
+    width: 40%;
+    height: 80%;
+    background-color: rgb(147, 199, 233);
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 100px;
+    margin: 30px 0;
+    font-size: 1.5rem;
+}
+#formule{
+    font-size: 3rem;
+}
+#par-mois{
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.formule-p{
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* responsive Tarifs */
+
+
+@media (max-width:1200px){
+    .formule-sub{
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+        height: 70%;
+        width: 60%;
+        padding-left: 80px;
+        margin:15px 0;
+
+    }
+    #formule{
+        font-size: 1.5rem;
+        text-align: start;
+    }
+
+    #par-mois{
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+        text-align: start;
+
+    }
+    
+    .formule-p{
+        text-align: start;
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
+
+    @media (max-width:700px){
+        .formule{
+            margin:0 50px;
+        }
+        .formule-sub{
+            padding-left: 40px;
+        }
+
+    }
+   
+
+
+               /***********VOS HOTES*************/
+
+
+
+
+.vos-hotes{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15vh;
+}
+.sub4{
+    margin-bottom: 10vh;
+}               
+
+.carte-presentation{
+    display: grid;
+    width: 100;
+    grid-template-columns:300px 1fr 1fr 100px 1fr 1fr 300px;
+}
+
+.identite{
+    border-radius:20px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 3px 5px rgba(0, 0, 255, 0.315);
+    margin: 15vh 0;
+    padding: 120px 50px 30px;
+    position: relative;
+}
+
+.id1{
+    grid-column: 2/4;
+    height:40vh ;
+}
+.id2{
+    grid-column: 5/7;
+    height:40vh ;
+}
+
+.identite img{
+    position: absolute;
+    top: -100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 2px solid #DFAF2C;
+}
+
+.identite h3{
+    margin-bottom: 20px;
+    color:#004F9F;
+}
+
+.identite p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.texte-hotes{
+    margin: 0 100px;
+    color: #004F9F;
+}
+
+.texte-hotes p{
+    text-align: center;
+    line-height: 1.5;
+    margin: 15px 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Responsives Vos Hotes */
+
+
+@media (max-width:1300px){
+    .carte-presentation{
+        grid-template-columns:auto 1fr 1fr 50px 1fr 1fr auto;
+
+    }
+}
+@media (max-width:700px){
+    .vos-hotes{
+        margin-bottom: 50px;
+    }
+    .sub4{
+        margin-bottom: 50px;
+    } 
+    .carte-presentation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .identite{
+        width: 80%;
+        height:40vh ;
+        margin: 100px 0 50px 0;
+    }
+    .texte-hotes{
+        margin: 0 30px;
+    }
+
+    .texte-hotes p{
+        text-align: justify;
+
+    }
+}
+
+
+                  /***********CONTACT*************/
+
+                  
+
+
+.contact{
+    margin-bottom: 15vh;
+}
+.sub5{
+    margin-bottom: 15vh;
+}                  
+
+.map-formulaire{
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 100px 1fr 1fr 100px;
+    grid-template-rows: 70vh 25vh;
+    margin: 0 30px;
+    background-color: #DFAF2C;
+    border-radius: 20px;
+}
+
+.map{
+    grid-column: 2/4;
+    grid-row: 1;
+    height: 60vh;
+    border-radius: 20px;
+    margin:30px 0;
+    
+}
+
+.formulaire{
+    grid-column:5/7 ;
+    grid-row: 1;
+    background-color:#e7d9b283 ;
+    margin: 30px 0;
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.forms{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.form{
+    margin: 15px 0;
+    width: 90%;
+}
+
+.form input,
+.form textarea{
+    width: 100%;
+    border: none;
+    outline:none;
+    border-radius:20px;
+    padding: 10px 0 10px 20px;
+    resize: none;
+    margin-left: 15px;
+    color: #004F9F;
+}
+
+.form input::placeholder,
+.form textarea::placeholder{
+    color: #004F9F;
+}
+
+#telephone,#submit{
+    width: 70%;
+}
+
+.form-submit {
+    align-self: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+#submit{
+    background-color: #DFAF2C;
+    color: white;
+    cursor: pointer;
+}
+
+.phones{
+    grid-column:5/7  ;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phones a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    color: white;
+    background-color: #004F9F;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+
+/* Resoonsive Contact */
+
+@media (max-width:1300px){
+    .map-formulaire{
+        grid-template-columns:50px 1fr 1fr 30px 1fr 1fr 50px;
+    }
+
+    .phones{
+        grid-column:2/7  ;
+        grid-row: 2/3;     
+    }  
+}
+
+@media (max-width:700px){
+    .map-formulaire{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map, .formulaire{
+        width: 85%;
+        height: 65vh;
+        padding: 10px;
+    }
+
+
+}
+
+                            /*********** FOOTER *************/
+
+footer{
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 39%, rgba(0,79,159,0.342472022988883) 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw 10vh 5vw;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer nav a{
+    margin: 10px 0;
+    text-decoration: none;
+    color: #004F9F;
+    font-weight: 600;
+}
+
+.logo-footer img{
+    width: 150px;
+}
+
+.socials-footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.socials-footer img{
+    width: 50px;
+    border-radius: 100%;
+    margin:0 5px;
+}
+
+@media (max-width:700px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 80vh;
+    }
+    .logo-footer img{
+        width: 100px;
+    }
+    .socials-footer{
+        align-items: flex-end;
+    }
+}
+
+
