@@ -85,6 +85,10 @@ header .logo img{
     font-size: 1.2rem;
 }
 
+.menu-desktop ul li a:hover{
+    color: #DFAF2C;
+}
+
 
 .gros-titre{
     position: absolute;
@@ -353,7 +357,7 @@ header .logo img{
     border-radius: 100px;
     text-decoration: none;
     font-size: 1rem;
-    transition: transform 2s ease-in-out;
+    transition: transform 0.4s ease-in-out;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.514);
 }
 
@@ -722,6 +726,13 @@ header .logo img{
     background-color: #DFAF2C;
     color: white;
     cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+#submit:hover{
+    transform: scalex(1.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.514);
+    background-color: #004F9F;
 }
 
 .phones{
@@ -741,10 +752,18 @@ header .logo img{
     padding: 10px 20px;
     border-radius: 20px;
     margin: 15px;
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+
+.phones a:hover{
+    transform: scalex(1.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.514);
+    background-color: #DFAF2C;
 }
 
 
-/* Resoonsive Contact */
+/* Responsive Contact */
 
 @media (max-width:1300px){
     .map-formulaire{
@@ -795,6 +814,9 @@ footer nav a{
     color: #004F9F;
     font-weight: 600;
 }
+footer nav a:hover{
+    color: #DFAF2C;
+}
 
 .logo-footer img{
     width: 150px;
@@ -809,6 +831,11 @@ footer nav a{
     width: 50px;
     border-radius: 100%;
     margin:0 5px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.socials-footer img:hover{
+    transform: scale(1.1);
 }
 
 @media (max-width:700px){
