@@ -868,6 +868,7 @@ footer nav a:hover{
         align-items: center;
         justify-content: space-between;
         height: 50vh;
+        min-height: 360px;
         padding: 0 5vw 5vh 5vw;
     }
     .logo-footer img{
