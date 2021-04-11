@@ -412,6 +412,9 @@ header .logo img{
         height: 50vh;
         min-height:400px;
     }
+    #pension3, .txt3{
+        height: 75vh;
+    }
     .pension-txt{
         min-heigh:400px;
     }
@@ -637,7 +640,7 @@ header .logo img{
         margin: 100px 0 50px 0;
     }
     .texte-hotes{
-        margin: 0 30px;
+        margin: 0 5px;
     }
 
     .texte-hotes p{
