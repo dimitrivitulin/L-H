@@ -93,8 +93,8 @@ header .logo img{
 
 .gros-titre{
     position: absolute;
-    top:250px;
-    left: 1000px;
+    top:30vh;
+    left: 60vw;
 }
 .gros-titre h1{
     font-size: 65px;
@@ -204,8 +204,8 @@ header .logo img{
 
       .gros-titre{
         position: absolute;
-        top:400px;
-        left: 45px;
+        top:50vh;
+        left: 10vw;
       }
       .gros-titre h1{
         font-size: 4rem;
@@ -226,8 +226,8 @@ header .logo img{
 
 .en-image{
     width: 100%;
-    margin: 200px 0;
     display: flex;
+    margin-top: 5vh;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -235,8 +235,8 @@ header .logo img{
 
 
 .en-image video{
-    margin-top: 200px;
-    width: 80vw;
+    margin: 10vh 0;
+    width: 70vw;
     outline: none;
     border: none;
     border-radius: 20px;
@@ -264,7 +264,7 @@ header .logo img{
 
 .pensions{
     width: 100%;
-    margin-bottom: 15vh;
+    margin-bottom: 5vh;
 }
 
 
@@ -274,7 +274,7 @@ header .logo img{
      grid-template-columns:100px 1fr 1fr 1fr 100px;
      gap: 10px;
      grid-template-rows: 70vh;
-     margin: 15vh 0 10vh 0;
+     margin: 10vh 0 10vh 0;
  }
 .pension{
 
@@ -445,10 +445,10 @@ header .logo img{
 
 
 .tarifs{
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
 }
 .titre-tarifs{
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }   
 
 .formule{
@@ -553,7 +553,7 @@ header .logo img{
 .vos-hotes{
     display: flex;
     flex-direction: column;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
 }
 .sub4{
     margin-bottom: 10vh;
@@ -572,7 +572,7 @@ header .logo img{
     flex-direction: column;
     align-items: center;
     box-shadow: 1px 3px 5px rgba(0, 0, 255, 0.315);
-    margin: 15vh 0;
+    margin: 10vh 0;
     padding: 120px 50px 30px;
     position: relative;
 }
@@ -664,10 +664,10 @@ header .logo img{
 
 
 .contact{
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
 }
 .sub5{
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
 }                  
 
 .map-formulaire{
