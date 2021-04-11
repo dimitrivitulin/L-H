@@ -800,6 +800,7 @@ header .logo img{
 
     .formulaire{
         height: 55vh;
+        min-height: 450px;
     }
     .map-formulaire{
         display: flex;
