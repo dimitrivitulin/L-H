@@ -50,7 +50,8 @@ header{
     min-height:100vh;
     display: flex;
     justify-content: space-between;
-    background: url(img/cheval1.jpg) no-repeat; 
+    background: url(img/cheval1.jpg);; 
+    background-repeat: no-repeat;
     background-position:  center;
     background-size: cover;
     color: #fff;
@@ -285,6 +286,7 @@ header .logo img{
 }
  .pension1{
      background:url(img/cheval\ 2\ l&h.jpg);
+     background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
      grid-column: 2/3;
@@ -292,12 +294,14 @@ header .logo img{
  }
  .pension2{
     background:url(img/cheval\ 3\ l&h.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
      grid-column: 3/4;
  }
  .pension3{
     background:url(img/cheval\ 4\ l&h.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
      grid-column: 4/5;
