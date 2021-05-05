@@ -87,7 +87,7 @@ header .logo img{
 }
 
 .menu-desktop ul li a:hover{
-    color: #DFAF2C;
+    color: #004F9F;
 }
 
 
@@ -179,7 +179,7 @@ header .logo img{
   }
   .burger__menu-link:hover {
     padding-right: 20px;
-    color: #DFAF2C;
+    color: #004F9F;
     text-shadow: 5px 5px 15px #017ffd;
   }
 
@@ -215,7 +215,9 @@ header .logo img{
       
   }
                     /***********------MAIN---- *************/
-
+main{
+    position: relative;
+}
 
 
 
@@ -236,7 +238,7 @@ header .logo img{
 
 .en-image video{
     margin: 10vh 0;
-    width: 70vw;
+    width: 45vw;
     outline: none;
     border: none;
     border-radius: 20px;
@@ -265,6 +267,7 @@ header .logo img{
 .pensions{
     width: 100%;
     margin-bottom: 5vh;
+    position: relative;
 }
 
 
@@ -275,6 +278,7 @@ header .logo img{
      gap: 10px;
      grid-template-rows: 70vh;
      margin: 10vh 0 10vh 0;
+     position: relative;
  }
 .pension{
 
@@ -417,11 +421,11 @@ header .logo img{
         min-height:400px;
     }
     #pension3, .txt3{
-        height: 65vh;
+        height: 75vh;
         min-height: 500px;
     }
     .pension-txt{
-        min-heigh:400px;
+        min-height:400px;
     }
 
     .pension-txt p{
@@ -438,33 +442,49 @@ header .logo img{
 
 }
 
-
+@media (max-width:800px)and (orientation:landscape){
+    .pension{
+        min-height:115vh;
+    }
+    .boutons-pensions{
+        position: relative;
+        top:160px;
+    }
+}
 
               /***********TARIFS*************/
 
 
 
 .tarifs{
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
-.titre-tarifs{
-    margin-bottom: 10vh;
-}   
 
 .formule{
-    height: 80vh;
-    background-color: #004F9F;
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 39%, rgba(0,79,159,0.342472022988883) 100%);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin:0 100px;
-    border-radius: 20px;
+    padding: 100px 0;
+
+}
+.formule-image{
+    width: 40%;
+    height: 80vh;
+    background: url(./img/cheval\ 5.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    border-radius:20px;
 }
 
 .formule-sub{
     width: 40%;
-    height: 80%;
-    background-color: rgb(147, 199, 233);
+    height: 80vh;
+    background-color: #004F9F;
+    color: #fff;
     font-weight: bold;
     padding: 30px;
     border-radius: 20px;
@@ -497,9 +517,6 @@ header .logo img{
         justify-content: center;
         align-items: flex-start;
         overflow: hidden;
-        height: 70%;
-        width: 60%;
-        padding-left: 80px;
         margin:15px 0;
 
     }
@@ -509,7 +526,7 @@ header .logo img{
     }
 
     #par-mois{
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         font-size: 1.2rem;
         text-align: start;
 
@@ -520,30 +537,38 @@ header .logo img{
         margin-bottom: 5px;
         font-weight: 400;
         font-size: 1rem;
+        padding: 10px 0;
     }
 }
 
     @media (max-width:700px){
-        .tarifs{
-            margin-bottom: 40px;
-        }
+
         .formule{
-            margin:0 20px;
+            height: 140vh;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 50px 0;
+
+        }
+        .formule-image, .formule-sub{
+            width: 80%;
             height: 50vh;
             min-height: 400px;
         }
         .formule-sub{
+            margin-top: 30px;
             padding-left: 40px;
             margin:5px 0;
         }
 
-        .titre-tarifs{
-            margin-bottom: 40px;
-        }
-
     }
    
-
+    @media (max-width:800px)and (orientation:landscape){
+        .tarifs{
+            position: relative;
+            top:160px;
+        }
+    }
 
                /***********VOS HOTES*************/
 
@@ -665,6 +690,101 @@ header .logo img{
     }
 }
 
+@media (max-width:800px)and (orientation:landscape){
+    .vos-hotes{
+        position: relative;
+        top:160px;
+    }
+    .carte-presentation{
+        position: relative;
+        top:120px;
+    }
+    .texte-hotes{
+        position: relative;
+        top:100px;
+    }
+}
+
+                  /***********GALERIE*************/
+.galerie{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.grille{
+   display:flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 0 10vw 10vh;
+   cursor: pointer;
+}   
+
+.galery-item{
+    width: 300px;
+    height: 300px;
+    margin:20px;
+    background-color: #017ffd;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.596);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.4s ease-out;
+}
+
+.galery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.galery-item:hover{
+    transform: scale(1.5);
+    box-shadow: none;
+}
+
+
+.swiper-container {
+    width: 600px;
+    height: 300px;
+    display: none;
+  }
+
+  @media (max-width:750px){
+    .galerie{
+        width: 100%;
+        min-height: 400px;
+        position: relative;
+        padding: 10vh 0;
+    }
+      .grille{
+          display: none;
+      }
+      .swiper-container{
+          display: block;
+          width:100%;
+          height: 70vh ;
+          position: relative;
+      }
+
+      .swiper-slide{
+          width: 100%;
+          height: 70vh ;
+
+      }
+      .swiper-button-prev{
+          top:50%;
+          left:20px;
+          color: #DFAF2C;
+          text-shadow: 1px 1px 5px black;
+      }
+      .swiper-button-next{
+          top:50%;
+          right:20px;
+          color: #DFAF2C;
+          text-shadow: 1px 1px 5px black;
+      }
+
+  }
 
                   /***********CONTACT*************/
 
@@ -834,7 +954,19 @@ header .logo img{
     .map, .formulaire{
         width: 90%;
     }
+}
 
+@media (max-width:800px)and (orientation:landscape){
+    .contact{
+        position: relative;
+        top:230px;
+    }
+    .map-formulaire{
+        grid-template-rows: 110vh 40vh;
+    }
+    .map, .formulaire{
+        height: 100vh;
+    }
 
 }
 
@@ -847,12 +979,13 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 0 5vw 10vh 5vw;
+    position: relative;
 }
 
 footer nav{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 footer nav a{
     margin: 10px 0;
@@ -884,14 +1017,37 @@ footer nav a:hover{
     transform: scale(1.1);
 }
 
+.copyright{
+    position:absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p{
+    text-align: center;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: #004F9F;
+}
+
+.copyright a:hover{
+    color: #DFAF2C;
+}
+
 @media (max-width:700px){
     footer{
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: 50vh;
+        height: 70vh;
         min-height: 360px;
-        padding: 0 5vw 5vh 5vw;
+        padding: 0 5vw 10vh 5vw;
     }
     .logo-footer img{
         width: 100px;
@@ -902,4 +1058,41 @@ footer nav a:hover{
     }
 }
 
+@media (max-width:800px)and (orientation:landscape){
+  footer{
+    position: relative;
+    top:230px;
+  } 
+}
 
+
+                            /*********** MENTIONS LEGALES *************/
+
+.mentions-legales{
+    min-height: 100vh;
+    width: 100%;
+}   
+
+.mentions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:10vh 10vw ;
+}
+
+.mentions h2{
+    color: #004F9F;
+    display: inline-block;
+    width: 170px;
+    padding: 20px 0 0;
+    border-bottom: 3px solid #DFAF2C;
+}
+
+
+
+.mentions p{
+    padding: 15px 0;
+    line-height: 1.5;
+    text-align: justify;
+}
