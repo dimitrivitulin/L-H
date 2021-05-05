@@ -1,10 +1,11 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper(".swiper-container", {
+  loop: true,
 
-    loop: true,
-
-     // Navigation arrows
+  // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
+
+document.addEventListener("touchstart", function () {}, true);
