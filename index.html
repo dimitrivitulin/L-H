@@ -33,6 +33,7 @@
                 <li><a href="#pensions">Pensions</a></li>
                 <li><a href="#tarifs">Tarifs</a></li>
                 <li><a href="#hotes">Vos hôtes</a></li>
+                <li><a href="#galerie">Galerie</a></li>
                 <li><a href="#contact">Contacts</a></li>
             </ul>
         </nav>
@@ -47,6 +48,7 @@
                 <a href="#pensions" class="burger__menu-link">Pensions</a>
                 <a href="#tarifs" class="burger__menu-link">Tarifs</a>
                 <a href="#hotes" class="burger__menu-link">Vos hôtes</a>
+                <a href="#galerie" class="burger__menu-link">Galerie</a>
                 <a href="#contact" class="burger__menu-link">Contacts</a>
             </div>
         </div>
@@ -85,7 +87,7 @@
             </div>
             <div class="pensions-images">
                 <div class="pension1 pension">
-                    <div class="pension-txt">
+                    <div class="pension-txt reveal">
                         <h3>Pré individuel <br> env. 3 000m²</h3>
                         <div class="paragraphe-pension">
                             <p>Abri</p>
@@ -99,7 +101,7 @@
                     </div>
                 </div>
                 <div class="pension2 pension">
-                    <div class="pension-txt">
+                    <div class="pension-txt reveal">
                         <h3>Espaces communs</h3>
                         <div class="paragraphe-pension">
                             <p>Un rond de longe, espace de détente</p>
@@ -113,7 +115,7 @@
 
                 </div>
                 <div class="pension3 pension" id="pension3">
-                    <div class="pension-txt txt3">
+                    <div class="pension-txt txt3 reveal">
                         <h3>Les + de L&H</h3>
                         <div class="paragraphe-pension">
                             <p>Analyse de la potabilité de l'eau <br>
@@ -200,7 +202,7 @@
         </section>
 
         <!-- /***********GALERIE*************/ -->
-        <section class="galerie">
+        <section class="galerie" id="galerie">
             <div class="titre">
                 <h2>Galerie</h2>
                 <div class="surlignage sub5"></div>
@@ -330,6 +332,7 @@
             <a href="#pensions">Pensions</a>
             <a href="#tarifs">Tarifs</a>
             <a href="#hotes">Vos hôtes</a>
+            <a href="#galerie">Galerie</a>
             <a href="#contact">Contacts</a>
         </nav>
         <div class="logo-footer">
@@ -352,6 +355,26 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
+    <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+    function reveal(){
+        const reveals =document.querySelectorAll('.reveal');
+
+        for (let i =0; i<reveals.length; i++){
+            let windowheight = window.innerHeight;
+            console.log(window.innerHeight);
+            let revealTop = reveals[i].getBoundingClientRect().top;
+            let revealpoint = 100;
+
+            if (revealTop < windowheight - revealpoint){
+                reveals[i].classList.add('hover');
+            }
+            else{
+                reveals[i].classList.remove('hover');
+            }
+        }
+    }
+    </script>
 </body>
 
 </html>
