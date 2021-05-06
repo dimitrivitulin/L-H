@@ -1,6 +1,6 @@
 const swiper = new Swiper(".swiper-container", {
   loop: true,
-
+  
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
@@ -8,4 +8,6 @@ const swiper = new Swiper(".swiper-container", {
   },
 });
 
-document.addEventListener("touchstart", function () {}, true);
+// const txt1 = document.querySelector(".pension1");
+
+
